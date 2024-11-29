@@ -1,0 +1,223 @@
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+#loading-screen img {
+  animation: vanishIn 4s 1;
+}
+
+#speed-shifter-intro {
+  animation: fadeIn 0.5s 1;
+}
+
+#speed-shifter-intro div {
+  background: url(/assets/images/bg.jpeg) no-repeat center center/cover fixed;
+}
+
+#speed-shifter-intro img {
+  height: 35%;
+  top: 10%;
+}
+
+#sound-button-container button,
+#pause-button-container button,
+#repeat-button-container button,
+#play-button-container button {
+  transition: scale 0.2s ease-in-out;
+}
+
+#sound-button-container button:hover,
+#pause-button-container button:hover,
+#repeat-button-container button:hover,
+#play-button-container button:hover {
+  scale: 1.1;
+}
+
+@keyframes vanishIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.active {
+  cursor: default !important;
+}
+
+#levels {
+  top: 50%;
+}
+
+#levels img {
+  height: 70px;
+  width: 70px;
+}
+
+#levels span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+}
+
+#play-button-container {
+  height: 70px;
+  width: 150px;
+  top: 70%;
+}
+
+.level-square {
+  font-size: 4.55rem;
+  color: #2d2e30;
+}
+
+.level-lock {
+  font-size: 1.5rem;
+  background-color: #2d2e30;
+  padding: 20px;
+  border-radius: 10px;
+  color: #808080;
+}
+
+.volumn-btn,
+.pause-btn,
+.repeat-btn {
+  color: #feca57;
+  border: 2px solid #808080;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 45px;
+  height: 45px;
+}
+
+.star {
+  color: #feca57;
+}
+
+.btn-play {
+  font-size: 2rem;
+  padding: 5px 20px !important;
+  border-radius: 10px;
+  border: 3px solid #feca57;
+  color: #feca57;
+}
+
+.btn-play:hover {
+  background-color: #feca57 !important;
+}
+
+#sound-button-container {
+  height: 70px;
+  width: 70px;
+  top: 3%;
+  right: 2%;
+  z-index: 20;
+}
+
+#pause-button-container {
+  height: 70px;
+  width: 70px;
+  top: 3%;
+  right: 10%;
+  z-index: 20;
+}
+
+#repeat-button-container {
+  height: 70px;
+  width: 70px;
+  top: 3%;
+  right: 6%;
+  z-index: 20;
+}
+
+#game-play {
+  animation: fadeIn 0.5s 1;
+}
+
+.road {
+  height: 100vh;
+  width: 100vw;
+  z-index: 4;
+}
+
+#countdown {
+  height: 200px;
+  width: 200px;
+  z-index: 6;
+}
+
+.car {
+  width: 80px;
+  animation: fadeIn 0.5s 1;
+  z-index: 5;
+}
+
+.scoreboard {
+  border-radius: 0 0 8px 8px;
+  z-index: 15;
+  width: 20vw;
+  min-width: 150px;
+  animation: fadeIn 0.5s 1;
+}
+
+#game-over {
+  height: 150px;
+}
+
+#game-over-overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 13;
+}
+
+#game-over-board {
+  z-index: 16;
+  width: 500px;
+  text-align: center;
+  animation: fadeIn 0.5s 1;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #2a2e37;
+  color: #e52554;
+  border: 5px solid #e52554;
+  font-size: 1em;
+  font-weight: 800;
+  transition: scale 0.2s ease-in-out;
+}
+
+.button:hover {
+  border-color: #c01740;
+  scale: 1.1;
+}
+
+.btn-close {
+  background-color: #e52554;
+  opacity: 1;
+}
+
+.btn-close:hover {
+  background-color: #c01740;
+}
